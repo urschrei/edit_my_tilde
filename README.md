@@ -1,10 +1,10 @@
-# ~ ~ ~
+# Edit my tilde.club index.html
 
 Hi. I have a [tilde.club page](http://tilde.club/~urschrei).
 
-If you'd like to edit its content, send me a pull request against [index.html](index.html)  
+If you'd like to edit its content, send me a pull request – you can put images in the `img` dir.
 
-Merged requests are automatically pushed to [tilde.club](http://tilde.club) using a GitHub webhook and a shonky Heroku webapp I wrote this morning.
+Merged requests are automatically pushed to tilde.club using GitHub webhooks and a shonky Heroku webapp I wrote this morning.
 
 ## TODO
-- Make this work for images (read: cat pictures) and js.
+- make it work for linked js
