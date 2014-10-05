@@ -1,4 +1,4 @@
-# Edit my tilde.club index.html
+# Edit my tilde.club
 
 Hi. I have a [tilde.club page](http://tilde.club/~urschrei).
 
