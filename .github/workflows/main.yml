@@ -1,0 +1,17 @@
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+    - name: Pull changes into Tilde
+      uses: appleboy/ssh-action@v1.0.1
+      with:
+        host: tilde.club
+        username: urschrei
+        key: ${{ secrets.TILDE_KEY }}
+        script: git pull -f origin master
