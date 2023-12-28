@@ -14,4 +14,4 @@ jobs:
         host: tilde.club
         username: urschrei
         key: ${{ secrets.TILDE_KEY }}
-        script: git pull -f origin master
+        script: cd public_html && git pull -f origin master
