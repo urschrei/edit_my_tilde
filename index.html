@@ -3,44 +3,41 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" crossorigin="anonymous">
+    <script type="text/javascript" src="js/random.js" defer></script>
     <style type="text/css">
         .text-center {
           text-align: center;
         }
-
-        .justify-center {
-          justify-content: center;
+        .margin { 
+            padding: 0.5rem;
         }
-        .pure-g > div { 
-            box-sizing: border-box;
-            padding: 1rem;
-        } 
-
     </style>
     <title>BAT CLUB</title>
 </head>
 <body>
-    <div class="pure-g justify-center">
-        <div class="pure-u-1 pure-u-md-1-3">
-            <h2 class="text-center">~WELCOME TO BAT CLUB~</h2>
-            <img class="pure-img" src="img/batclub.jpg" alt="BAT CLUB" title="NONE MORE BLACK"/>
-            <hr>
-            <p>
-            <small>this text has come from a <a href="https://github.com/urschrei/edit_my_tilde">pull request</a>!</small>
-            <small>So has this!</small>
-            <small>I had completely forgotten this existed. <pre>¯\_(ツ)_/¯</pre></small>
-            <small>20…19?!</small>
-            <small>2023?!</small>
-            </p>
-            <hr>
+    <main class="container-fluid">
+        <!-- main content row -->
+        <div class="grid">
+            <article>
+                <header class="text-center"><h3>~Welcome to Bat Club!~</h3></header>
+                <div class="text-center">
+                    <img src="img/batclub.jpg" alt="BAT CLUB" title="NONE MORE BLACK"/>
+                </div>
+                <hr>
+                <p>
+                    <small>this text has come from a <a href="https://github.com/urschrei/edit_my_tilde">pull request</a>!</small>
+                    <small>So has this!</small>
+                    <small>I had completely forgotten this existed. <pre>¯\_(ツ)_/¯</pre></small>
+                    <small>20…19?!</small>
+                    <small>2023?!</small>
+                </p>
+            </article>
         </div>
-    </div>
-    <div class="pure-g justify-center">
-        <div class="pure-u-1 pure-u-md-1-3">
-            <div id="rtilde"></div>
+        <!-- button row -->
+        <div id="rtilde" class="grid">
+            <a href="https://github.com/urschrei/edit_my_tilde" class="secondary margin" role="button">Modify this page by opening a pull request</a>
         </div>
-    </div>
-    <script type="text/javascript" src="js/random.js"></script>
+    </main>
 </body>
 </html>

@@ -383,9 +383,12 @@ var pages = [
 var page = pages[Math.floor(Math.random() * pages.length)];
 link = "http://tilde.club/~" + page
 var a = document.createElement('a');
-var linkText = document.createTextNode("TILDE CLUB ROULETTE");
+a.classList.add("secondary");
+a.classList.add("margin");
+var linkText = document.createTextNode("OR PLAY TILDE CLUB ROULETTE");
 a.appendChild(linkText);
 a.title = "Go to a random Tilde Club page";
 a.href = link;
+a.role = "button";
 // add the link to the correct div
 document.getElementById("rtilde").appendChild(a);
